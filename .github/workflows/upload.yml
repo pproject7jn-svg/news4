@@ -1,20 +1,15 @@
 name: YouTube Video Upload
 
 on:
-  workflow_dispatch:  # Manual trigger only
-    inputs:
-      confirm:
-        description: 'Type YES to confirm upload'
-        required: true
-        default: 'NO'
+  workflow_dispatch:  # Manual trigger - no confirmation needed
 
 jobs:
   upload:
     runs-on: ubuntu-latest
-    timeout-minutes: 120  # 2 hours max
+    timeout-minutes: 300  # 5 hours max for large batches
     
     steps:
-      - name: 📥 Checkout Repository
+      - name: 🔥 Checkout Repository
         uses: actions/checkout@v4
       
       - name: 🐍 Setup Python
@@ -27,7 +22,7 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
       
-      - name: 🔍 Check Files
+      - name: 📋 Check Files
         run: |
           echo "📋 Checking required files..."
           
@@ -56,21 +51,14 @@ jobs:
           echo "📂 Repository Files:"
           ls -lh
       
-      - name: 🚀 Run Upload
-        if: github.event.inputs.confirm == 'YES'
+      - name: 🚀 Run Upload (All Videos)
         run: |
           echo "🎬 Starting upload process..."
+          echo "📌 Will upload ALL remaining videos"
           echo ""
           python uploader.py
         env:
           PYTHONUNBUFFERED: 1
-      
-      - name: ⚠️ Upload Skipped
-        if: github.event.inputs.confirm != 'YES'
-        run: |
-          echo "⚠️ Upload cancelled - confirmation required"
-          echo "💡 Set 'confirm' to 'YES' to proceed"
-          exit 1
       
       - name: 💾 Save Progress
         if: success()
@@ -99,7 +87,7 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
-          echo "🔄 Next run: Click 'Run workflow' button again" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Upload complete!" >> $GITHUB_STEP_SUMMARY
       
       - name: 📤 Commit Progress (Optional)
         if: success()
