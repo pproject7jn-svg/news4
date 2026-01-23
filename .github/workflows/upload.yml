@@ -1,7 +1,10 @@
 name: YouTube Video Upload
 
 on:
-  workflow_dispatch:  # Manual trigger - no confirmation needed
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches:
+      - main
 
 jobs:
   upload:
@@ -44,7 +47,7 @@ jobs:
           echo "✅ All required files present"
           
           echo ""
-          echo "📊 Video Links Count:"
+          echo "📹 Video Links Count:"
           grep -v '^#' videos.txt | grep -v '^$' | wc -l
           
           echo ""
