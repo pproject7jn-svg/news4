@@ -1,11 +1,6 @@
-https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260129_124431-adecf266/LONG_Video_11m5s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260129_124808-bf3d0130/LONG_Video_11m26s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260129_124651-d2dca377/LONG_Video_12m9s.mp4 
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_055823-669a9a6c/Long_video_10m6s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_075616-672d4d59/Long_video_14m32s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_075430-0301fda9/Long_video_10m16s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_025320-e57fe938/Long_video_12m5s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_024622-a5891638/Long_video_11m21s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_024332-f2a9c847/Long_video_11m49s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_024039-283a2938/Long_video_11m24s.mp4
-https://github.com/pproject7jn-svg/dri/releases/download/video-20260128_025246-f52bcf99/Long_video_11m54s.mp4
+https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260130_055949-81806763/LONG_Video_11m9s.mp4
+https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260130_055903-c7364cd2/LONG_Video_15m34s.mp4
+https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260130_055845-38676cc0/LONG_Video_11m26s.mp4
+https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260130_055926-11442d73/LONG_Video_12m16s.mp4
+https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260130_055752-6dece9f6/LONG_Video_11m14s.mp4
+https://github.com/pproject7jn-svg/dri/releases/download/long-video-20260130_055126-cc960b1f/LONG_Video_11m37s.mp4
