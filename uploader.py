@@ -295,7 +295,8 @@ class YouTubeUploader:
             output = f"video_{index + 1}.mp4"
             url = f"https://drive.google.com/uc?id={file_id}"
             
-            gdown.download(url, output, quiet=False, fuzzy=True)
+            # Download the file (removed fuzzy parameter for compatibility)
+            gdown.download(url, output, quiet=False)
             
             if os.path.exists(output):
                 size_mb = os.path.getsize(output) / (1024 * 1024)
